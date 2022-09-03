@@ -9,6 +9,7 @@ import {
   Routes,
   Switch,
 } from "react-router-dom";
+import Search from "./pages/Search";
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -56,6 +57,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </Router>
       {/* <Router>
