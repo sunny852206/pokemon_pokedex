@@ -1,8 +1,14 @@
 import { computeHeadingLevel } from "@testing-library/react";
 import { useState, useEffect } from "react";
-import NavBar from "./components/Navbar";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import PokemonThumbnail from "./components/PokemonThumbnail";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Switch,
+} from "react-router-dom";
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([]);
@@ -47,7 +53,13 @@ function App() {
   return (
     <div className="app-container">
       <Router>
-        <NavBar />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+      {/* <Router>
+
 
         <div className="pokemon-container">
           <div className="all-container">
@@ -65,7 +77,7 @@ function App() {
             Load more
           </button>
         </div>
-      </Router>
+      </Router> */}
     </div>
   );
 }
