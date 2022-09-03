@@ -6,24 +6,13 @@
   flex-direction: row;
 }
 
-.navbar .leftSide {
-  flex: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: 150px;
-}
-
-.navbar .leftSide img {
-  width: 70px;
-}
-
 .navbar .rightSide {
   flex: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 50px;
 }
 
 .navbar a {
@@ -37,10 +26,6 @@
   border: none;
   color: white;
   cursor: pointer;
-}
-
-.navbar .rightSide svg {
-  font-size: 40px;
 }
 
 .navbar #open {

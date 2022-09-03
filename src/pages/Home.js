@@ -5,10 +5,7 @@ import "../styles/Home.css";
 function Home() {
   return (
     <div className="home">
-      <div className="headerContainer">
-        Home: Pokedex
-        <Pokedex />
-      </div>
+      <Pokedex />
     </div>
   );
 }
